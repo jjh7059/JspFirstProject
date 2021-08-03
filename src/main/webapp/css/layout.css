@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------- 스크롤 배너 ------------- */
+.scroll_wrap{position:absolute; top:339px; left:50%; width:1200px; margin-left:-600px; z-index:101;}
+/* 스크롤이동 고정 위치 */
+#scroll_left.ban_fixed{position:fixed; top:60px; left:50%; margin-left:-705px;}
+#scroll_right.ban_fixed{position:fixed; bottom:160px; right:0;}
+/* 스크롤배너(왼쪽) */
+#scroll_left{position:absolute; top:0px; left:-105px;}
+/* 스크롤배너(오른쪽) */
+#scroll_right{position:fixed; bottom:160px; right:0; width:105px; }
+#scroll_right .right_banner img{margin:0 0 15px 0;}
+.scroll_right_cart{width:105px; display:block; text-align:center; background:#636363 url('../../img/common/ico_cart_22_24.png') center 20px no-repeat; padding:50px 0 17px; font-size:11px; color:#fff; line-height:1em;}
+.scroll_right_cart strong{display:block; font-size:16px; margin-top:7px;}
+.scroll_right_cont{float:left; min-width:69px; padding:18px; background:#fff; border-left:#e4e4e4 1px solid; border-bottom:#e4e4e4 1px solid;}
+.scroll_right_cont h4{padding:0; color:#666666; text-align:center;}
+.scroll_right_cont ul{padding:15px 0 0 0;}
+.scroll_right_cont li{position:relative; width:69px; height:69px; margin:0 0 12px 0; padding:0 0 0 0; border:1px solid #ececec; background:#ffffff; text-align:right;}
+.scroll_right_cont .photo{display:inline-block; position:relative; width:69px; height:69px; z-index:20; text-align:center;
+background:url('/pub/new_skin/img/common//bg/bg_noimg_300.gif') no-repeat center 1px;
+background-size:74px 74px;}
+.scroll_right_cont .photo img{width:100%; height:100%; /*margin:1px 1px 0 0;*/}
+/* 최근본 상품 내용 */
+.scroll_right_cont .src_box{position:absolute; top:-1px; right:-1px; width:191px; height:66px; padding:3px 0 0 7px; border:1px solid #999999; background:#ffffff; text-align:left; z-index:10;}
+.scroll_right_cont .src_box em{display:block; overflow:hidden; width:115px; height:43px; color:#939393; word-break:break-all;}
+.scroll_right_cont .src_box strong{display:block; color:#525c6a;}
+.scroll_right_cont .src_box strong b{font-weight:normal;}
+/* 최근본 상품 삭제 버튼 */
+.scroll_right_cont .btn_scroll_list_del{position:absolute; top:0px; right:0px; width:15px; height:15px; z-index:30;}
+/* 상품리스트 오버 시 제어 */
+.scroll_right_cont li .src_box,
+.scroll_right_cont li .btn_scroll_list_del{display:none;}
+.scroll_right_cont li:hover .src_box,
+.scroll_right_cont li:hover .btn_scroll_list_del{display:block;}
+/* 상품리스트 페이징 */
+.scroll_right_cont .scr_paging{width:69px; margin:0 auto; color:#939393; text-align:center;}
+.scroll_right_cont .scr_paging span{padding:0 2px 0 2px;}
+.scroll_right_cont .scr_paging strong{padding:0 2px 0 2px; color:#525c6a;}
+#scroll_right .btn_scroll_top_bot{position:fixed; bottom:42px; right:32px;}
+#scroll_right .btn_scroll_top_bot a{display:block; margin-top:6px;}
+#scroll_right .btn_scroll_top_bot a:first-child{margin-top:0;}
