@@ -226,15 +226,15 @@
 												<option>배송 전 연락 부탁드립니다</option>
 												<option>직접 입력</option>
 											</select>
-											<input type="text" class="orderMemo" name="orderMemo"/>
+											<input type="text" class="message" name="message"/>
 										</div>
 										<script>
                                             $('.order_select').change(function(){
-                                                $('.orderMemo').attr('value',$(".order_select option:selected").val());
+                                                $('.message').attr('value',$(".order_select option:selected").val());
                                                 if($(".order_select option:selected").index() == 3){
-                                                    $('.orderMemo').val('').focus();
+                                                    $('.message').val('').focus();
                                                 } else {
-                                                    $('.orderMemo').val($(".order_select option:selected").val());
+                                                    $('.message').val($(".order_select option:selected").val());
                                                 }
                                             });
 										</script>
@@ -277,105 +277,6 @@
 										<strong class="fno dn" id="totalDeliveryCharge">0</strong>
 										<strong class="fno" id="totalDeliveryChargekk" style='font-size:0;'>0</strong>
 										<span class="multi_shipping_text"></span>
-									</td>
-								</tr>
-								<tr id="rowDeliveryInsuranceFee" class="dn">
-									<th scope="row">해외배송 보험료</th>
-									<td>
-										￦<span id="deliveryInsuranceFee">0</span>
-										<input type="hidden" name="deliveryInsuranceFee" value="0">
-									</td>
-								</tr>
-								<tr id="rowDeliverAreaCharge" class="dn">
-									<th scope="row">지역별 배송비</th>
-									<td>
-										<span id="deliveryAreaCharge">0</span>
-										<input type="hidden" name="totalDeliveryCharge" value="0">
-										<input type="hidden" name="deliveryAreaCharge" value="0">
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">할인금액</th>
-									<td>
-										<ul class="order_benefit_list">
-											<li class="order_benefit_sale">
-												<div id="saleDefault">
-													<strong class="fno total-member-dc-price">0</strong>
-
-													<span style="padding-left:5px">
-
-													</span>
-												</div>
-												<div id="saleWithoutMember" class="dn">
-													<span>
-														<strong class="total-member-dc-price-without-member fno">0</strong>
-													</span>
-													<span style="padding-left:5px">
-														<!-- 회원 ￦0 -->
-
-													</span>
-												</div>
-											</li>
-										</ul>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">적립금액</th>
-									<td>
-										<ul class="order_benefit_list">
-											<li class="order_benefit_mileage js_mileage">
-												<div id="mileageDefault">
-<strong>+</strong>													<strong class="total-member-mileage fno">5,054</strong>
-													<span style="padding-left:5px">
-회원 <span class="member-mileage fno">5,054</span>													</span>
-												</div>
-												<div id="mileageWithoutMember" class="js_mileage dn">
-													<strong class="total-member-mileage-without-member fno">0</strong>
-													<span style="padding-left:5px">
-														<!-- 회원 0 -->
-													</span>
-												</div>
-											</li>
-										</ul>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">쿠폰사용</th>
-									<td>
-										<input type="hidden" name="couponApplyOrderNo" value="" />
-										<input type="hidden" name="totalCouponOrderDcPrice" value="" />
-										<input type="hidden" name="totalCouponOrderPrice" value="" />
-										<input type="hidden" name="totalCouponOrderMileage" value="" />
-										<input type="hidden" name="totalCouponDeliveryDcPrice" value="" />
-										<input type="hidden" name="totalCouponDeliveryPrice" value="" />
-										<ul class="order_benefit_list order_coupon_benefits  dn">
-											<li class="order_benefit_sale">
-												<em>
-													- <strong class="fno" id="useDisplayCouponDcPrice">0 </strong>
-													<span style="padding:0 14px 0 5px;">주문할인</span>
-												</em>
-											</li>
-											
-										</ul>
-										<button type="button" href="#couponOrderApplyLayer" class="btn_gray_mid btn_open_layer" >쿠폰 조회 및 적용</button>
-									</td>
-								</tr>
-								<!-- // 2019.11.13 임직원 마일리지 사용불가 처리 -->
-								<tr>
-									<th scope="row">적립금 사용</th>
-									<td>
-										<div class="order_money_use">
-											<input type="text" name="useMileage" onblur="gd_mileage_use_check('y', 'y', 'y');" />
-											<a href="javascript:void(0);" class="btn_ok" >확인</a>
-											<span class="form_element">
-												<input type="checkbox" id="useMileageAll" onclick="gd_mileage_use_all();">
-												<label for="useMileageAll" class="check_s">전액 사용하기</label>
-											</span>
-											<div>
-												<span class="money_use_sum">보유 적립금 : <span class="fno">￦ 0</span></span>
-												<em style="display:none" class="money_use_txt js-mileageInfoArea"></em>
-											</div>
-										</div>
 									</td>
 								</tr>
 								<tr>
@@ -531,7 +432,11 @@
 									</div>
 									<!-- //pay_bankbook_box -->
 									<div style="display:none">
-<div class="card" id="settlekind_general_pc">신용카드 컨텐츠</div><div class="account-bank" id="settlekind_general_pb">계좌이체 컨텐츠</div><div class="virtual-bank" id="settlekind_general_pv">가상계좌 컨텐츠 </div><div class="cellphone" id="settlekind_general_ph">휴대폰 컨텐츠</div>!--									</div>
+										<div class="card" id="settlekind_general_pc">신용카드 컨텐츠</div>
+										<div class="account-bank" id="settlekind_general_pb">계좌이체 컨텐츠</div>
+										<div class="virtual-bank" id="settlekind_general_pv">가상계좌 컨텐츠 </div>
+										<div class="cellphone" id="settlekind_general_ph">휴대폰 컨텐츠</div>
+									</div>
 								</div>
 								<!-- //general_payment -->
 								<!-- N : 일반결제 끝 -->
@@ -678,6 +583,12 @@ function reflectNamePhone() {
 		document.getElementById("recipientName").value = document.getElementById("senderName").value;
 		document.getElementById("recipientPhone").value = document.getElementById("senderPhone").value;	
 	}
+}
+
+//결제수단 선택
+function changeclass(obj) {
+    var NAME = document.getElementById("ordPayDiv");
+    NAME.className=obj;
 }
 </script>
 </html>
