@@ -244,35 +244,33 @@
 			<div class="payment_progress">
 				<div class="order_zone_tit">
 					<h4>결제수단 선택 / 결제</h4>
-					<p class="js_pay_content" style="display:none">※ 고객님은 안전거래를 위해 현금으로 결제시 저희 쇼핑몰에서 가입한 구매안전서비스인 KG 이니시스의 구매안전(에스크로)서비스를 이용하실 수 있습니다.</p>
 				</div>
-
 				<!-- 05-1 ordPayDiv -->
 				<div id="ordPayDiv" class="Main01">
 					<ul>
 						<li id="settlekindType_pc" onClick="changeclass('Main01')" class="set01">
-							<input type="radio" id="settleKind_pc" name="settleKind" value="신용카드" checked />
+							<input type="radio" id="settleKind_pc" name="payMethod" value="신용카드" checked />
 							<label for="settleKind_pc" class="choice_s">신용카드</label>
 						</li>
 						<li id="settlekindType_pv" onClick="changeclass('Main03')" class="set03">
-							<input type="radio" id="settleKind_pv_input" name="settleKind" value="가상계좌"/>
+							<input type="radio" id="settleKind_pv_input" name="payMethod" value="가상계좌"/>
 							<label for="settleKind_pv_input" class="choice_s">가상계좌</label>
 						</li>
 						<li id="settlekindType_gb" onClick="changeclass('Main04')" class="set04">
-							<input type="radio" id="settleKind_gb" name="settleKind" value="무통장입금"/>
+							<input type="radio" id="settleKind_gb" name="payMethod" value="무통장입금"/>
 							<label for="settleKind_gb" class="choice_s">무통장 입금</label>
 						</li>
 						<li id="settlekindType_ph" onClick="changeclass('Main05')" class="set05">
-							<input type="radio" id="settleKind_ph" name="settleKind" value="휴대폰결제"/>
+							<input type="radio" id="settleKind_ph" name="payMethod" value="휴대폰결제"/>
 							<label for="settleKind_ph" class="choice_s">휴대폰결제</label>
 						</li>
 						<li onClick="changeclass('Main06')" class="set06">
-							<input type="radio" id="settleKind_payco_fc_input" name="settleKind" value="페이코"/>
+							<input type="radio" id="settleKind_payco_fc_input" name="payMethod" value="페이코"/>
 							<label for="settleKind_payco_fc_input" class="choice_payco">PAYCO</label>
 						</li>
 						<!-- 추가 1026 -->
 						<li id="settlekindType_pk" onClick="changeclass('Main07')" class="set07">
-							<input type="radio" id="settleKind_pk" name="settleKind" value="카카오페이">
+							<input type="radio" id="settleKind_pk" name="payMethod" value="카카오페이">
 							<label for="settleKind_pk" class="choice_s">카카오페이</label>
 						</li>
 						<!-- // 추가 1026 -->
@@ -364,7 +362,7 @@ function changeclass(obj) {
 }
 
 //orderForm 입력값 검증
-// => 주문정보와 배송정보로 구분하여 하나라도 빈칸이 있으면 해당 정보에 메시지 출력, submit 취소 후 이동 
+// => 주문정보와 배송정보로 구분하여 하나라도 빈칸이 있으면 해당 정보에 메시지 출력, submit 취소 후 이동
 $("#orderForm").submit(function() {
 	var submitResult = true;
 	$(".error").css("display", "none");
