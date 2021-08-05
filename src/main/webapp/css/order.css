@@ -396,9 +396,9 @@ input[type="password"]{line-height:40px;height:40px;}
 
 
 
-.order_cont .order_table_type .form_element label.check_s{min-width:13px;padding:0 0 0 32px;background:url('../../img/common/input/check_off_small.png') no-repeat 1px 12px;}
-.order_cont .order_table_type .form_element label.check_s:hover{background:url('../../img/common/input/check_over_small.png') no-repeat 1px 12px;}
-.order_cont .order_table_type .form_element label.check_s.on{background:url('../../img/common/input/check_on_small.png') no-repeat 1px 12px;}
+.order_cont .order_table_type .form_element label.check_s{min-width:13px;padding:0 0 0 32px;background:url('../images/input/check_off_small.png') no-repeat 1px 12px;}
+.order_cont .order_table_type .form_element label.check_s:hover{background:url('../images/input/check_over_small.png') no-repeat 1px 12px;}
+.order_cont .order_table_type .form_element label.check_s.on{background:url('../images/input/check_on_small.png') no-repeat 1px 12px;}
 
 
 
@@ -457,9 +457,9 @@ input[type="password"]{line-height:40px;height:40px;}
 
 .cart_cont_list{}
 .cart_cont_list .form_element{height:20px !important;line-height:20px;}
-.cart_cont_list .form_element label.check_s{min-width:13px;padding:0 0 0 22px;background:url('/data/skin/front/mime/img/imgN/icon_check01_off.png') no-repeat 0 0;}
-.cart_cont_list .form_element label.check_s:hover{background:url('/data/skin/front/mime/img/imgN/icon_check01_off.png') no-repeat 0 0;}
-.cart_cont_list .form_element label.check_s.on{background:url('/data/skin/front/mime/img/imgN/icon_check01_on.png') no-repeat 0 0}
+.cart_cont_list .form_element label.check_s{min-width:13px;padding:0 0 0 22px;background:url('../images/input/check_off_small.png') no-repeat 0 0;}
+.cart_cont_list .form_element label.check_s:hover{background:url('../images/input//checkoff_small.png') no-repeat 0 0;}
+.cart_cont_list .form_element label.check_s.on{background:url('../images/input/check_on_small.png') no-repeat 0 0}
 
 
 .input_box {height:40px;position:relative;}

@@ -20,7 +20,7 @@
 .goods_list_tit {line-height:1; position:relative;}
 .goods_list_tit h3 {font-size:24px;text-align:center;font-weight:300;margin-bottom:15px;}
 .goods_list_tit .title_more {display:inline-block;position:relative;padding-right:18px;margin:0 auto;font-size:26px;color:#000;font-weight:600;}
-.goods_list_tit .title_more:before {content:'';width:9px;height:14px;background:url('/data/skin/front/mime/img/imgN/ico_title_cursor.png') no-repeat 0 0;position:absolute;right:0;top:50%;margin-top:-7px;}
+.goods_list_tit .title_more:before {content:'';width:9px;height:14px;background:url('../images/home/ico_title_cursor.png') no-repeat 0 0;position:absolute;right:0;top:50%;margin-top:-7px;}
 
 .goods_list_cont{position:relative; width:100%;}
 .goods_list_cont:after{display:block; clear:both; content:"";}

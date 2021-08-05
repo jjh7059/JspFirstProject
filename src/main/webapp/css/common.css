@@ -490,8 +490,8 @@ span.form_element{display:inline-block;}
 }
 .swiper-pagination-bullet-active {width:52px;opacity:1;}
 
-.swiper-button-prev {width:18px !important;height:35px !important;left:-50px !important;background:url('../../img/imgN/ico_slide_prev.png') no-repeat 0 0 !important;margin-top:0 !important;}
-.swiper-button-next {width:18px !important;height:35px !important;right:-50px !important;background:url('../../img/imgN/ico_slide_next.png') no-repeat 0 0 !important;margin-top:0 !important;}
+.swiper-button-prev {width:18px !important;height:35px !important;left:-50px !important;background:url('../images/home/ico_slide_prev.png') no-repeat 0 0 !important;margin-top:0 !important;}
+.swiper-button-next {width:18px !important;height:35px !important;right:-50px !important;background:url('../images/home/ico_slide_next.png') no-repeat 0 0 !important;margin-top:0 !important;}
 
 
 /* gnb search */
